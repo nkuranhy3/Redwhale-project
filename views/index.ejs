@@ -1,0 +1,11 @@
+<h1>home page</h1>
+        <% companies.forEach(function(company){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= company.image %>">
+                   <div class="caption">
+                       <h4><%= company.name %></h4>
+                   </div> 
+                </div>
+            </div>
+        <% }); %>

@@ -1,0 +1,21 @@
+{
+  "name": "Redwhale-project",
+  "version": "1.0.0",
+  "description": "companies can create profiles to showcase their company culture and achievements",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": "https://github.com/nkuranhy3/Redwhale-project.git",
+  "author": "Alfred Boateng <programmingwithalfred@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.17"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
