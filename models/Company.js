@@ -7,7 +7,7 @@ var companySchema = new mongoose.Schema({
    shortDescription: String,
    highlights: String,
    image: String,
-   Video: String,
+   video: String,
    longDescription: String,
    team: String,
    milestones: String,
