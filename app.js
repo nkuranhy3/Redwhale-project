@@ -74,9 +74,21 @@ app.post("/company", function(req, res){
 });
 
 
-//NEW - show form to create new campground
+//NEW - show form to create new Company
 app.get("/company/new", function(req, res){
     res.render("new"); 
  });
+
+// SHOW - shows more info about one company
+app.get("/company/:id", function(req, res){
+    Company.findById(req.params.id, function(err, foundCompany){
+        if(err){
+            console.log(err);
+        } else {
+            res.render("show", {company: foundCompany});
+        }
+    });
+})
+
 
 app.listen(PORT, ()=> console.log(`Server is running on http://localhost:${PORT}`));
