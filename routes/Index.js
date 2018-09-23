@@ -63,12 +63,12 @@ router.post("/company", function(req, res){
 
 
 //NEW - show form to create new Company
-router.get("/company/new", function(req, res){
+router.get("/new", function(req, res){
     res.render("new"); 
  });
 
 // SHOW - shows more info about one company
-router.get("/company/:id", function(req, res){
+router.get("/:id", function(req, res){
     Company.findById(req.params.id, function(err, foundCompany){
         if(err){
             console.log(err);
