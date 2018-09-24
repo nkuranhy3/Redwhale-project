@@ -20,6 +20,8 @@ router.get("/", function(req, res){
 router.post("/company", function(req, res){
     var name = req.body.name;
     var image = req.body.image;
+    var image1 = req.body.image1;
+    var image2 = req.body.image2;
     var coverImage= req.body.coverImage;
     var logo= req.body.logo;
     var shortDescription = req.body.shortDescription;
@@ -49,6 +51,8 @@ router.post("/company", function(req, res){
     var newCompany = {
         name: name,
         image: image,
+        image1:image1,
+        image2:image2,
         logo:logo, 
         coverImage:coverImage, 
         shortDescription: shortDescription, 
