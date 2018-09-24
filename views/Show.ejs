@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2018/09/14/22/38/stork-3678282__340.jpg" type="image/x-icon">
     <meta name="description" content="Show Details about one company">
     <title>Details About Company</title>
-   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
     <link rel="stylesheet" href="assets/tether/tether.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="assets/gallery/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 </head>
+
 <body>
     <section class="menu cid-r4pFcOQHbo" once="menu" id="menu2-6">
         <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
@@ -48,7 +50,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link text-black display-4" href="/new">
-                            New</a>
+                            New Company</a>
                     </li>
                 </ul>
             </div>
@@ -57,20 +59,19 @@
 
     <section class="engine"></section>
     <section class="features14 cid-r4pJvJD4GZ mbr-parallax-background" id="features14-f">
-        <div class="container align-center">
+        <div class="container align-center ">
             <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">
-                More info about <%=company.name%> Company
+                More info about
+                <%=company.name%> Company
             </h2>
             <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">
-                    <%=company.highlights%>
+                <%=company.highlights%>
             </h3>
             <div class="media-container-column">
                 <div class="row justify-content-center">
                     <div class="card p-4 col-12 col-md-6 col-lg-3">
                         <div class="media pb-3">
-                            <div class="card-img align-self-center">
-                                <span class="mbri-bootstrap mbr-iconfont"></span>
-                            </div>
+                           
                             <div class="media-body">
                                 <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
                                     Short Description
@@ -88,9 +89,6 @@
 
                     <div class="card p-4 col-12 col-md-6 col-lg-3">
                         <div class="media pb-3">
-                            <div class="card-img align-self-center">
-                                <span class="mbri-responsive mbr-iconfont"></span>
-                            </div>
                             <div class="media-body">
                                 <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
                                     Company Location
@@ -99,16 +97,13 @@
                         </div>
                         <div class="card-box align-left">
                             <p class="mbr-text mbr-fonts-style display-7">
-                                    <%=company.location%>
+                                <%=company.location%>
                             </p>
                         </div>
                     </div>
 
                     <div class="card p-4 col-12 col-md-6 col-lg-3">
                         <div class="media pb-3">
-                            <div class="card-img align-self-center">
-                                <span class="mbri-upload mbr-iconfont"></span>
-                            </div>
                             <div class="media-body">
                                 <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
                                     Company Website
@@ -121,28 +116,10 @@
                             </p>
                         </div>
                     </div>
-<!-- 
-                    <div class="card p-4 col-12 col-md-6 col-lg-3">
-                        <div class="media pb-3">
-                            <div class="card-img align-self-center">
-                                <span class="mbri-sites mbr-iconfont"></span>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
-                                    Unlimited Sites
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="card-box align-left">
-                            <p class="mbr-text mbr-fonts-style display-7">
-                                Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.
-                            </p>
-                        </div>
-                    </div> -->
                 </div>
                 <div class="media-container-row image-row">
                     <div class="mbr-figure" style="width: 22%;">
-                        <img src="assets/images/017.jpg" alt="logo" title="Company logo">
+                        <img src="<%=company.website%>" alt="logo" title="Company logo">
                     </div>
                 </div>
             </div>
@@ -153,7 +130,10 @@
             <div class="media-container-row">
                 <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
                     <blockquote>
-                        <strong>Long Description of <%=company.name%>! </strong><%=company.longDescription%>  </blockquote>
+                        <strong>Long Description of
+                            <%=company.name%>! </strong>
+                        <%=company.longDescription%>
+                    </blockquote>
                 </div>
             </div>
         </div>
@@ -164,7 +144,9 @@
             <div class="media-container-row">
                 <div class="title col-12 col-md-8">
                     <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                        Images From <%=company.name%></h2>
+                        Images From
+                        <%=company.name%>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -182,18 +164,6 @@
                                         <span class="icon-focus"></span>
                                     </div>
                                 </div>
-                                <!-- <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive">
-                                    <div href="#lb-gallery1-d" data-slide-to="1" data-toggle="modal">
-                                        <img src="assets/images/gallery01.jpg" alt="" title="">
-                                        <span class="icon-focus"></span>
-                                    </div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Creative">
-                                    <div href="#lb-gallery1-d" data-slide-to="2" data-toggle="modal">
-                                        <img src="assets/images/gallery02.jpg" alt="" title="">
-                                        <span class="icon-focus"></span>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -207,7 +177,7 @@
                             <div class="modal-body">
                                 <div class="carousel-inner">
                                     <!-- images must be at least 3 -->
-                                    <div class="carousel-item">
+                                    <div class="carousel-item active">
                                         <img src="<%=company.image%>" alt="Pictures from <%=company.name%>" title="<%=company.name%>">
                                     </div>
                                     <div class="carousel-item">
@@ -216,7 +186,7 @@
                                     <div class="carousel-item">
                                         <img src="assets/images/gallery02.jpg" alt="" title="">
                                     </div>
-                                    <div class="carousel-item active">
+                                    <div class="carousel-item">
                                         <img src="assets/images/gallery03.jpg" alt="" title="">
                                     </div>
                                 </div>
@@ -249,7 +219,8 @@
                         Our Product And Services
                     </h1>
                     <div class="mbr-section-text mbr-white pb-3">
-                        <p class="mbr-text mbr-fonts-style display-5"><%=company.productDescription%>
+                        <p class="mbr-text mbr-fonts-style display-5">
+                            <%=company.productDescription%>
                         </p>
                     </div>
                     <div class="mbr-section-btn">
@@ -259,8 +230,7 @@
                 </div>
 
                 <div class="mbr-figure" style="width: 100%;">
-                    <iframe id="video-x" class="mbr-embedded-video" src="<%=company.video%>"
-                        width="1280" height="720" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="video-x" class="mbr-embedded-video" src="<%=company.video%>" width="1280" height="720" frameborder="0" allowfullscreen></iframe>
                 </div>
 
             </div>
@@ -291,33 +261,33 @@
                         </div>
                         <div class="card-footer">
                             <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">
-                                    <%=company.teamMemberName%>
+                                <%=company.teamMemberName%>
                             </div>
 
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
-                        <div class="panel-item p-3">
-                            <div class="card-block">
-                                <div class="testimonial-photo">
-                                    <img src="<%=company.anotherTeamMemberPic%>" alt="team member Picture" title="team member">
-                                </div>
-                                <p class="mbr-text mbr-fonts-style display-7">
-                                    <%=company.anotherTeam%>
-                                </p>
+                    <div class="panel-item p-3">
+                        <div class="card-block">
+                            <div class="testimonial-photo">
+                                <img src="<%=company.anotherTeamMemberPic%>" alt="team member Picture" title="team member">
                             </div>
-                            <div class="card-footer">
-                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">
-                                        <%=company.anotherTeamMemberName%>
-                                </div>
-    
-                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                <%=company.anotherTeam%>
+                            </p>
                         </div>
-                        
+                        <div class="card-footer">
+                            <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">
+                                <%=company.anotherTeamMemberName%>
+                            </div>
+
+                        </div>
                     </div>
-                
+
+                </div>
+
             </div>
         </div>
     </section>
@@ -342,55 +312,14 @@
                             <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
                                 From our archives
                             </h4>
-                            <p class="mbr-timeline-text mbr-fonts-style display-7"> <%=company.milestones%></p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- <div class="row timeline-element  separline">
-                    <div class="timeline-date-panel col-xs-12 col-md-6 align-right">
-                        <div class="time-line-date-content">
-                           
-                        </div>
-                    </div>
-                    <span class="iconBackground"></span>
-                    <div class="col-xs-12 col-md-6 align-left ">
-                        <div class="timeline-text-content">
-                            <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
-                                Responsive Design
-                            </h4>
                             <p class="mbr-timeline-text mbr-fonts-style display-7">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula.
-                                Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat
-                                elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.
+                                <%=company.milestones%>
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="row timeline-element reverse">
-                    <div class="timeline-date-panel col-xs-12 col-md-6  align-left">
-                        <div class="time-line-date-content">
-                            <p class="mbr-timeline-date mbr-fonts-style display-5">
-                                3 march 2020
-                            </p>
-                        </div>
-                    </div>
-                    <span class="iconBackground"></span>
-                    <div class="col-xs-12 col-md-6 align-right">
-                        <div class="timeline-text-content">
-                            <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
-                                Smart Watch
-                            </h4>
-                            <p class="mbr-timeline-text mbr-fonts-style display-7">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula.
-                                Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat
-                                elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.
-                            </p>
-                        </div>
-                    </div> -->
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -400,7 +329,9 @@
             <div class="media-container-row">
                 <div class="title col-12 col-md-8">
                     <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                        Job Vacancies from <%=company.name%></h2>
+                        Job Vacancies from
+                        <%=company.name%>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -415,7 +346,7 @@
                     <ul>
                         <li>
                             <%=company.jobVacancies%>
-                            <a href="#">Read more...</a>
+                                <a href="#">Read more...</a>
                         </li>
                     </ul>
                 </div>
@@ -430,16 +361,24 @@
                     <div>
                         <div class="mbr-social-likes">
                             <span class="btn btn-social socicon-bg-facebook facebook mx-2" title="Share link on Facebook">
-                                <a href="<%=company.facebook%>"><i class="socicon socicon-facebook"></i></a>
+                                <a href="<%=company.facebook%>">
+                                    <i class="socicon socicon-facebook"></i>
+                                </a>
                             </span>
                             <span class="btn btn-social twitter socicon-bg-twitter mx-2" title="Share link on Twitter">
-                                <a href="<%=company.twitter%>"><i class="socicon socicon-twitter"></i></a>
+                                <a href="<%=company.twitter%>">
+                                    <i class="socicon socicon-twitter"></i>
+                                </a>
                             </span>
                             <span class="btn btn-social plusone socicon-bg-googleplus mx-2" title="Share link on Google+">
-                                <a href="<%=company.googleplus%>"><i class="socicon socicon-googleplus"></i></a>
+                                <a href="<%=company.googleplus%>">
+                                    <i class="socicon socicon-googleplus"></i>
+                                </a>
                             </span>
                             <span class="btn btn-social pinterest socicon-bg-pinterest mx-2" title="Share link on Pinterest">
-                                <a href="<%=company.googleplus%>"><i class="socicon socicon-pinterest"></i></a>
+                                <a href="<%=company.googleplus%>">
+                                    <i class="socicon socicon-pinterest"></i>
+                                </a>
                             </span>
                         </div>
                     </div>
@@ -454,7 +393,7 @@
                 <div class="col-12 col-md-3">
                     <div class="media-wrap">
                         <a href="/company">
-                            <img src="assets/images/logo2.png" alt="Redwhale-project" title="logo">
+                            <img src="https://cdn.pixabay.com/photo/2018/09/14/22/38/stork-3678282__340.jpg" alt="Redwhale-project" title="logo">
                         </a>
                     </div>
                 </div>
@@ -550,4 +489,5 @@
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
     <script src="assets/theme/js/script.js"></script>
 </body>
+
 </html>

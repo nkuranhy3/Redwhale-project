@@ -1,106 +1,106 @@
 var mongoose = require("mongoose");
 
 var companySchema = new mongoose.Schema({
-   name:{
-       type: String,
-       required: true,
-       default: ""
-   },
-   location: {
-    type: String,
-    default: "United States of America"
+    name: {
+        type: String,
+        required: true,
+        default: ""
     },
-   coverImage: {
-    type: String,
-    default: ""
+    location: {
+        type: String,
+        default: "United States of America"
     },
-   logo: {
-    type: String,
-    default: ""
+    coverImage: {
+        type: String,
+        default: ""
     },
-   shortDescription: {
-    type: String,
-    default: ""
+    logo: {
+        type: String,
+        default: ""
     },
-   highlights: {
-    type: String,
-    default: ""
+    shortDescription: {
+        type: String,
+        default: ""
     },
-   image: {
-    type: String,
-    default: ""
+    highlights: {
+        type: String,
+        default: ""
     },
-   video: {
-    type: String,
-    default: ""
+    image: {
+        type: String,
+        default: ""
     },
-   longDescription: {
-    type: String,
-    default: ""
+    video: {
+        type: String,
+        default: ""
     },
-   team: {
-    type: String,
-    default: ""
+    longDescription: {
+        type: String,
+        default: ""
     },
-   teamMemberName: {
-    type: String,
-    default: ""
+    team: {
+        type: String,
+        default: ""
     },
-   teamMemberPic: {
-    type: String,
-    default: ""
+    teamMemberName: {
+        type: String,
+        default: ""
+    },
+    teamMemberPic: {
+        type: String,
+        default: ""
     },
     anotherTeam: {
         type: String,
         default: ""
-        },
-       anotherTeamMemberName: {
+    },
+    anotherTeamMemberName: {
         type: String,
         default: ""
-        },
-        anotherTeamMemberPic: {
+    },
+    anotherTeamMemberPic: {
         type: String,
         default: ""
-        },
-   milestones: {
-    type: String,
-    default: ""
     },
-   productDescription: {
-    type: String,
-    default: ""
+    milestones: {
+        type: String,
+        default: ""
     },
-   jobVacancies: {
-    type: String,
-    default: ""
+    productDescription: {
+        type: String,
+        default: ""
     },
-   contactDetails: {
-    type: String,
-    default: ""
+    jobVacancies: {
+        type: String,
+        default: ""
     },
-   website: {
-    type: String,
-    default: "alfredboateng.me"
+    contactDetails: {
+        type: String,
+        default: ""
     },
-   googleplus: {
-    type: String,
-    default: ""
+    website: {
+        type: String,
+        default: "alfredboateng.me"
     },
-   facebook: {
-    type: String,
-    default: ""
+    googleplus: {
+        type: String,
+        default: ""
     },
-   instagram: {
-    type: String,
-    default: ""
+    facebook: {
+        type: String,
+        default: ""
     },
-   pinterest: {
-    type: String,
-    default: ""
+    instagram: {
+        type: String,
+        default: ""
     },
-   twitter: {
-    type: String,
-    default: ""
+    pinterest: {
+        type: String,
+        default: ""
+    },
+    twitter: {
+        type: String,
+        default: ""
     }
 });
 
