@@ -45,9 +45,7 @@ router.post("/company", function(req, res){
     var anotherTeam = req.body.anotherTeam;
     var anotherTeamMemberName= req.body.anotherTeamMemberName;
     var anotherTeamMemberPic= req.body.anotherTeamMemberPic;
-
-
-
+    
     var newCompany = {
         name: name,
         image: image,

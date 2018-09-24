@@ -31,7 +31,7 @@ var companySchema = new mongoose.Schema({
     },
     image1: {
         type: String,
-        default: "https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313__340.jpg"
+        default: "https://cdn.pixabay.com/photo/2016/03/27/21/44/streets-1284394__340.jpg"
     },
 
     image2: {

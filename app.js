@@ -4,7 +4,9 @@ var express = require("express"),
   mongoose = require("mongoose")
 PORT = process.env.PORT || 4000;
 
-mongoose.connect("mongodb://localhost:27017/Internship", {
+
+
+mongoose.connect("mongodb://redwhale:redwhale_project1@ds213183.mlab.com:13183/redwhale", {
   useNewUrlParser: true
 });
 mongoose.connection.once("open", () => {
@@ -17,4 +19,4 @@ app.use(express.static('public'));
 
 app.use(require("./routes/Index"));
 
-app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`App has Started on http://localhost:${PORT}`));
