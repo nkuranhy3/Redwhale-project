@@ -18,7 +18,11 @@ var companySchema = new mongoose.Schema({
    jobVacancies: String,
    contactDetails: String,
    website: String,
-   socialMediaLink: String
+   googleplus: String,
+   facebook: String,
+   instagram: String,
+   pinterest: String,
+   twitter: String
 });
 
 module.exports = mongoose.model("Company", companySchema);

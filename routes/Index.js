@@ -32,10 +32,15 @@ router.post("/company", function(req, res){
     var jobVacancies= req.body.jobVacancies;
     var contactDetails= req.body.contactDetails;
     var website= req.body.website;
-    var socialMediaLink= req.body.socialMediaLink;
+    var googleplus= req.body.googleplus;
     var location= req.body.location;
     var teamMemberName=req.body.teamMemberName;
     var teamMemberPic = req.body.teamMemberPic;
+    var facebook =req.body.facebook;
+    var instagram = req.body.instagram;
+    var pinterest= req.body.pinterest;
+    var twitter = req.body.twitter;
+
 
 
 
@@ -53,10 +58,16 @@ router.post("/company", function(req, res){
         jobVacancies:jobVacancies, 
         contactDetails:contactDetails, 
         website:website, 
-        socialMediaLink:socialMediaLink,
+        googleplus:googleplus,
         location:location,
         teamMemberName:teamMemberName,
         teamMemberPic:teamMemberPic,
+        facebook:facebook,
+        instagram:instagram,
+        pinterest:pinterest,
+        twitter:twitter
+
+
     }
     // Create a new Company and save to DB
     Company.create(newCompany, function(err, newlyCreated){
