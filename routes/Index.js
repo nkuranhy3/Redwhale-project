@@ -33,6 +33,11 @@ router.post("/company", function(req, res){
     var contactDetails= req.body.contactDetails;
     var website= req.body.website;
     var socialMediaLink= req.body.socialMediaLink;
+    var location= req.body.location;
+    var teamMemberName=req.body.teamMemberName;
+    var teamMemberPic = req.body.teamMemberPic;
+
+
 
     var newCompany = {
         name: name,
@@ -48,7 +53,10 @@ router.post("/company", function(req, res){
         jobVacancies:jobVacancies, 
         contactDetails:contactDetails, 
         website:website, 
-        socialMediaLink:socialMediaLink
+        socialMediaLink:socialMediaLink,
+        location:location,
+        teamMemberName:teamMemberName,
+        teamMemberPic:teamMemberPic,
     }
     // Create a new Company and save to DB
     Company.create(newCompany, function(err, newlyCreated){

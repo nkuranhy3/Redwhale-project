@@ -2,6 +2,7 @@ var mongoose = require("mongoose");
 
 var companySchema = new mongoose.Schema({
    name: String,
+   location: String,
    coverImage: String,
    logo: String,
    shortDescription: String,
@@ -10,6 +11,8 @@ var companySchema = new mongoose.Schema({
    video: String,
    longDescription: String,
    team: String,
+   teamMemberName: String,
+   teamMemberPic: String,
    milestones: String,
    productDescription: String,
    jobVacancies: String,
