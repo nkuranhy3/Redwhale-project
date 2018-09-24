@@ -40,7 +40,9 @@ router.post("/company", function(req, res){
     var instagram = req.body.instagram;
     var pinterest= req.body.pinterest;
     var twitter = req.body.twitter;
-
+    var anotherTeam = req.body.anotherTeam;
+    var anotherTeamMemberName= req.body.anotherTeamMemberName;
+    var anotherTeamMemberPic= req.body.anotherTeamMemberPic;
 
 
 
@@ -53,7 +55,8 @@ router.post("/company", function(req, res){
         highlights:highlights, 
         video:video, 
         longDescription:longDescription, 
-        team: team, milestones:milestones, 
+        team: team, 
+        milestones:milestones, 
         productDescription:productDescription, 
         jobVacancies:jobVacancies, 
         contactDetails:contactDetails, 
@@ -65,7 +68,11 @@ router.post("/company", function(req, res){
         facebook:facebook,
         instagram:instagram,
         pinterest:pinterest,
-        twitter:twitter
+        twitter:twitter,
+        anotherTeam:anotherTeam,
+        anotherTeamMemberName:anotherTeamMemberName,
+        anotherTeamMemberPic:anotherTeamMemberPic
+
 
 
     }
